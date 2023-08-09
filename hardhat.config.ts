@@ -22,6 +22,14 @@ const config: HardhatUserConfig = {
       }
     ]
   },
+
+  networks:{
+    mumbai:{
+      url: 'https://rpc.ankr.com/polygon_mumbai',
+      accounts:['538236e3a7bfc76b007b412718124a505fa7b77820d017c22008c992ca4bba6c']
+
+    }
+  },
   circom: {
     // (optional) Base path for input files, defaults to `./circuits/`
     inputBasePath: "./circuits",
